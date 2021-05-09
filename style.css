@@ -89,5 +89,12 @@ input:-webkit-autofill:active
   right: 325px;
 }
 
+#enter{
+  visibility: hidden;
+  position: absolute;
+  font-size: 50px;
+  bottom: 190px;
+  right: 350px;
+}
 
 
