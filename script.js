@@ -51,6 +51,9 @@ function stepGrass(){
 
 function stepArea2(){
     document.body.style.background = "green";
+    const btnEnter = document.getElementById('enter');
+
+    btnEnter.style.visibility = "visible";
 }
 
 function stillGreen(){
