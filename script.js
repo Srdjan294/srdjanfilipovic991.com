@@ -23,42 +23,40 @@ function validate() {
 }
 
 function change(){
-    document.body.style.background="green";
     const form = document.getElementById('form');
     const btnarea = document.getElementById('btnarea');
-    const btnarea2 = document.getElementById('btnarea2');
     const button = document.getElementById('button');
-    const btnEnter = document.getElementById('enter');
 
     form.style.visibility = "hidden";
     btnarea.style.visibility = "visible";
-    btnarea2.style.visibility = "visible";
-    btnarea2.style.zIndex = "9";
     btnarea.style.zIndex = "10";
-    button.style.zIndex = "5";
-    btnEnter.style.visibility = "visible";
-    btnEnter.style.zIndex = "10";
+    button.style.visibility = "hidden";
+
+    const sidewalk = document.getElementById('sidewalk')
+    const grass = document.getElementById('grass');
+
+    sidewalk.style.visibility = "visible";
+    grass.style.visibility = "visible";
+
+    document.body.style.backgroundImage = "url(img/bckgimg.png)";
+    document.body.style.backgroundSize = "cover";
+    document.body.style.backgroundRepeat = "no-repeat";
+    
 }
 
 function stepGrass(){
-    document.body.style.background="red";
-    const btnarea2 = document.getElementById('btnarea2');
-    const btnEnter = document.getElementById('enter');
+    const sidewalk = document.getElementById('sidewalk')
+    const grass = document.getElementById('grass');
 
-    btnEnter.style.visibility = "hidden";
-    btnarea2.style.visibility = "hidden";
-}
-
-function stepArea2(){
-    document.body.style.background = "green";
-    const btnEnter = document.getElementById('enter');
-
-    btnEnter.style.visibility = "visible";
+    sidewalk.style.background = "red";
+    grass.style.background = "red";
 }
 
 function stillGreen(){
     document.body.style.background = "green";
     const btnEnter = document.getElementById('enter');
+    const btnarea2 = document.getElementById('btnarea2');
 
+    btnarea2.style.visibility = "visible;"
     btnEnter.style.visibility = "visible";
 }
