@@ -10,7 +10,7 @@
 </head>
 <body>
     <div>
-        <form action="#" id=form>
+        <form action="#" id="form">
             <div class="inputBox">
                 <input type="text" id="email" onkeyup="validate();" style="color: #306090" placeholder="Enter Email Adress">
                 <span class="indicator"></span>
@@ -18,9 +18,15 @@
         </form>
     </div>
     <br>
-    <button id=button class="btn" onclick="change();">Validate</button>
-    <div class="btnarea" id=btnarea></div>
-    <div class="sidewalk" id=sidewalk></div>
-    <div class="grass" id=grass onmouseover="stepGrass();"></div>
+    <button id="button" class="btn" onclick="change();" style="cursor: pointer">Validate</button>
+    <div class="btnarea" id="btnarea"></div>
+    <div class="sidewalk" id="sidewalk">
+        <a href="enter.html"><i class="fas fa-door-open" id="door"></i></a>
+    </div>
+    <div class="grass" id="grass" onmouseover="stepGrass();"></div>
+    <div class="alert" id="alert">
+        <h1 class="message">You stepped on the grass.</h1>
+        <a href="index.html" class="again"><button style="cursor: pointer">Try again</button></a>
+    </div>
 </body>
 </html>

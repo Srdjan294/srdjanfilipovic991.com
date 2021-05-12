@@ -48,15 +48,15 @@ function stepGrass(){
     const sidewalk = document.getElementById('sidewalk')
     const grass = document.getElementById('grass');
 
-    sidewalk.style.background = "red";
-    grass.style.background = "red";
+    sidewalk.style.visibility = "hidden";
+    grass.style.visibility = "hidden"
+
+    const alert = document.getElementById('alert');
+
+    alert.style.visibility = "visible";
+
+    const btnarea = document.getElementById("btnarea");
+
+    btnarea.style.visibility = "hidden";
 }
 
-function stillGreen(){
-    document.body.style.background = "green";
-    const btnEnter = document.getElementById('enter');
-    const btnarea2 = document.getElementById('btnarea2');
-
-    btnarea2.style.visibility = "visible;"
-    btnEnter.style.visibility = "visible";
-}
